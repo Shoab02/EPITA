@@ -24,6 +24,17 @@ public class Launcher {
         SavingsAccount account = new SavingsAccount(123);
         InvestmentAccount investAccount = new InvestmentAccount(234);
 
+        System.out.println("Please enter the initial balance for savings account: ");
+        String initialBalance = scanner.nextLine();
 
+        SavingsAccount SAFromConsole= new SavingsAccount(Double.parseDouble(initialBalance));
+
+        System.out.println("Please enter the initial balance for investment account: ");
+        initialBalance = scanner.nextLine();
+
+        InvestmentAccount IAFromConsole= new InvestmentAccount(Double.parseDouble(initialBalance));
+
+        System.out.println(SAFromConsole);
+        System.out.println(IAFromConsole);
     }
 }
