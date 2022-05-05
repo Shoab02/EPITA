@@ -1,6 +1,8 @@
 package fr.epita.launchers;
 
 import fr.epita.datamodel.Customer;
+import fr.epita.datamodel.InvestmentAccount;
+import fr.epita.datamodel.SavingsAccount;
 
 import java.util.Scanner;
 
@@ -18,6 +20,10 @@ public class Launcher {
         System.out.println("Please enter the name");
         String line = scanner.nextLine();
         System.out.println("Name: " + line);
+
+        SavingsAccount account = new SavingsAccount(123);
+        InvestmentAccount investAccount = new InvestmentAccount(234);
+
 
     }
 }
